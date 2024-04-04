@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        input{
+            background-color: transparent;
+            width:30%;
+            height: 30px;
+            border: 1px solid yellow;
+            border-radius: 8px;
+
+
+        }
+        input::placeholder{
+            text-align: center;
+            color: white;
+        }
+        button{
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid yellow;
+        }
+        i{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <input type="text" id="age" name="age" placeholder="Enter your age">
+    <br>
+    <button  onclick="func()">click here to varify</button>
+    <br>
+    <i id="1"> </i>
+</div>
+</body>
+<script>
+    function func(){
+        var x =document.getElementById('age').value;
+        
+        if(parseInt(x)>18){
+            var w="You Can vote";
+            document.getElementById('1').innerHTML=w;
+        }
+        else if(parseInt(x)==17){
+            var w="You Canmot  vote bas ek sal aur";
+            document.getElementById('1').innerHTML=w;
+        }
+        else{
+            var w="You Cannot vote";
+            document.getElementById('1').innerHTML=w;
+        }
+
+    }
+</script>
+
+</html>

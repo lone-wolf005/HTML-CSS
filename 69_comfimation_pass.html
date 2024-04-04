@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 400px;
+            border: black solid 2px;
+            background-color:rosybrown;
+        }
+        .ma{
+            height: 300px;
+            width: 200px;
+            margin:auto;
+            box-shadow:seagreen;
+            background-color: white;
+            
+            border: black solid 1px;
+        }
+        #max{
+            /* padding:50px; */
+            margin: 30px;
+        }
+    </style>
+</head>
+<body >
+    <div class="main">
+    <br>
+    <form action="#" class="ma" onsubmit="return validate()">
+        <h2 style="margin:5px">Pesonal Information</h2>
+       <div style="margin:20px">
+        Name
+        <input type="text" id="1">
+       </div>
+       <div style="margin:20px">
+        Password
+        <input type="password" name="" id="2">
+       </div>
+       <div style="margin: 20px">
+        confirm password
+        <input type="password" name="",id="3" onkeyup="check(this)">
+       </div>
+       <div style="color: red;" , id="4">
+    
+       </div>
+       <div id="max" >
+        <button>submit</button>
+       </div>
+
+    </form>
+    </div>
+</body>
+<script>
+    var pass=document.getElementById('2');
+    var x=document.getElementById('4');
+    var flag =1;
+    function check(ele){
+        if(ele.value.length>0){
+            if(ele.value !=pass.value){
+             x.innerText="password is not matched";
+             flag=0;
+            }
+            else{
+              x.innerText="";
+              flag=1;
+            }
+        }
+        else{
+            x.innerText="enter the confirm password";
+            flag=0;
+        }
+    }
+    function validate(){
+        if(falg==1)return true;
+        else return false;
+    }
+</script>
+</html>

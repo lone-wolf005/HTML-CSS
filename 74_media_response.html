@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .inner{
+        width: 1100px;
+        border: 1px solid red;
+        margin: auto;
+    }
+   .col {
+    width:23%;
+    margin:1%;
+    float: left;
+    background-color: gray;
+
+
+    }
+    .col img{
+        width:100%;
+    }
+    .clear{
+        clear:both;
+    }
+    @media only screen and (min-width:200px) and (max-width:567px){
+     .inner{
+        /* set according to the size of device */
+        width: 100%;
+     }
+     .col{
+        width: 98%;
+        /* this set only one image in page */
+        margin: 1%;
+     }
+    } 
+
+    
+
+</style>
+<body>
+    <div class="inner">
+        <div class="col">
+            <img src="photo/1.jpg" alt="">
+            <h3>Demo</h3>
+        </div>
+        <div class="col">
+            <img src="photo/20221125_162222.jpg" alt="">
+            <h3>Demo</h3>
+        </div>
+        <div class="col">
+            <img src="photo/IMG_20230106_114220.jpg" alt="">
+            <h3>demo</h3>
+        </div>
+        <div class="col">
+            <img src="photo/1.jpg" alt=""><h3>demo</h3>
+        </div class="clear">
+        <!-- <div class="col"></div> -->
+        
+        
+    </div>
+    
+</body>
+</html>

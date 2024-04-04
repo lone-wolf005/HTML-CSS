@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <input type="text" id="N">
+    <br>
+    <br>
+    <button  onclick="func()">click here</button>
+    
+</body>
+  <script>
+    var x=[];
+    x=[1,2,3,4];
+    alert(x[2]);
+
+    var y=new Array();
+    y=[1,2,3,4,5,6];
+    //document.write( y[1] );
+
+    // for loop
+    function func(){
+        var n=document.getElementById('N').value;
+     
+    for(var i=0;i<parseInt(n);i++){
+        document.write(i+"<br>");
+    }
+    var i=0;
+    while(i<parseInt(n)){
+        document.write("jigar"+" "+i+"<br>");
+        i++;
+    }
+    }
+    
+  </script>
+</html>

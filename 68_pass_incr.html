@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            border: 1px solid black;
+            width: 400px;
+            height: 200px;
+        }
+        #per{
+            height: 40px;
+            width: 200px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body id="main">
+    <form action="#">
+        <h3 id="per" >personal information</h3>
+        <div style="margin:15px;height: 1px;">
+            Name
+            <!-- <br> -->
+            <input type="text" name="" id="1" >
+        </div>
+        <br>
+        <div style="margin:15px;height: 10px;">
+            Password
+            <!-- <br> -->
+            <input type="password" name="" id="2">
+        </div>
+        <br>
+        <button style="margin:15px">submit</button>
+        <button id="3" onclick="toggle(this)">show password</button>
+        
+    </form>
+</body>
+<script>
+    var pass=document.getElementById('2');
+    function toggle(ele){
+        var x=pass.getAttribute('type');
+        if(x==='password'){
+           pass.setAttribute('type','text');
+           ele.innerText="Hide password";
+        }
+        else{
+            pass.setAttribute('type','password');
+            ele.innerText="show password";
+        }
+    }
+
+</script>
+</html>

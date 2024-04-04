@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 400px;
+            border: black solid 2px;
+            background-color:rosybrown;
+        }
+        .ma{
+            height: 300px;
+            width: 200px;
+            margin:auto;
+            box-shadow:seagreen;
+            background-color: white;
+            
+            border: black solid 1px;
+        }
+        #max{
+            /* padding:50px; */
+            margin: 30px;
+        }
+    </style>
+</head>
+<body >
+    <div class="main">
+    <br>
+    <form action="#" class="ma" onsubmit="return validate()">
+        <h2 style="margin:5px">Pesonal Information</h2>
+       <div style="margin:20px">
+        Name
+        <input type="text", id="1"onkeyup="white(this.value)">
+       </div>
+       <div style="margin:20px">
+        Password
+        <input type="password" name="" id="2"onkeyup="white(this.value)">
+       </div>
+       <div style="margin: 20px">
+        confirm password
+        <input type="password" name="",id="3" onkeyup="check(this)">
+       </div>
+       <div style="color: red;",margin:auto , id="4">
+          
+       </div>
+       <div id="max" >
+        <button>submit</button>
+       </div>
+
+    </form>
+    </div>
+</body>
+<script>
+    var pattern=/\s/g;
+    var writ=document.getElementById('4');
+    var fun=1;
+    // used to define pattern
+    function white(data){
+        var flag=pattern.test(data);
+        if(flag){
+           writ.innerText="space is not allowed"; 
+           fun=0;
+        }
+        else{
+            writ.innerText="";
+            fun=1
+        }
+    }
+    function validate(){
+        if(fun){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+
+  
+</script>
+</html>

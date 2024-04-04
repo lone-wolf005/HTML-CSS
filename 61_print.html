@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="data1">
+        <h1>Printable Data</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident blanditiis dolorem maxime autem repellat illum, voluptas minus nostrum. Fuga alias minima odio maxime, consequatur natus. Illo perspiciatis recusandae ut quaerat.
+    </div>
+    <br>
+    <button onclick="printcontent()">printdata</button>
+    <div id="data2">
+        <h1>Non prinatable</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nostrum atque unde sunt possimus sed perspiciatis, autem neque tenetur doloribus tempora. Pariatur hic, facilis enim necessitatibus voluptate architecto. Explicabo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nostrum atque unde sunt possimus sed perspiciatis, autem neque tenetur doloribus tempora. Pariatur hic, facilis enim necessitatibus voluptate architecto. Explicabo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nostrum atque unde sunt possimus sed perspiciatis, autem neque tenetur doloribus tempora. Pariatur hic, facilis enim necessitatibus voluptate architecto. Explicabo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fuga nostrum atque unde sunt possimus sed perspiciatis, autem neque tenetur doloribus tempora. Pariatur hic, facilis enim necessitatibus voluptate architecto. Explicabo.
+    </div>
+    
+</body>
+<script>
+    // if we use window.print()-->it print all data in body
+
+    // function printcontent(){
+    //     window.print();
+    // }
+   
+    
+    function printcontent(){
+    var body=document.getElementById('body').innerHTML;
+    var data=document.getElementById('data1').innerHTML;
+        document.getElementById('body').innerHTML=data;
+        window.print();
+        document.getElementById('body').innerHTML=body;
+    }
+</script>
+</html>

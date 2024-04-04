@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter a number <br>
+    <input type="text" name="" id="1">
+    <button onclick="mainn()">click</button>
+    <h1 id="2"></h1>
+    
+</body>
+<script>
+    function mainn(){
+    var num=document.getElementById('1');
+    var x=num.value;
+try{
+    if(isNaN(x)){
+       throw "Not a Number";
+    }
+  }
+catch(err){
+    document.getElementById('2').innerText=err;
+}
+finally{
+    doucument.getElementById('2').innerText="success";
+}
+}
+</script>
+</html>

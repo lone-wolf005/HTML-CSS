@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100px;
+            width: 400px;
+            border: solid black 2px;
+            position: relative;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: solid black 1px;
+            background-color: red;
+            position: absolute;
+            left :0px;
+            top:0px;
+            animation: box 3s;
+            animation-timing-function: linear;
+            /* linear divide whole time equally
+              linear motion of animation from start to end;
+            */
+            animation-timing-function: ease;
+            /* 
+             slow--fast--slow
+            */
+            animation-timing-function: ease-in;
+            /* 
+             slow---fast
+            */
+            animation-timing-function:ease-out ;
+            /* 
+             fast --slow
+            */
+            animation-timing-function: ease-in-out;
+            /* 
+             same as ease -_-
+             */
+        }
+        @keyframes box{
+          from{
+            left :0px;
+            top:0px;
+            background-color: red;
+
+          }
+          to{
+            left:300px;
+            background-color: black;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+
+
+    </div>
+    
+</body>
+</html>

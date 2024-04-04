@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:120px;
+            width: 400px;
+            /* column-count: 3; */
+            column-gap: 10px;
+            /* background-color: blue; */
+            column-fill: auto;
+            /* fill contact according to space remaining */
+            column-width: 100px;
+            column-rule: 5px double yellowgreen;
+              /* line between two column */
+
+
+        }
+        .h2{
+            column-span: all;
+            /* main contant above and all other content are
+            moves to downward */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2 class="h2" >This is my book</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dignissimos architecto veniam, in magnam natus id minima optio magni, iste itaque amet sequi vel. Consequuntur placeat itaque voluptates beatae quos!</p>
+    </div>
+</body>
+</html>

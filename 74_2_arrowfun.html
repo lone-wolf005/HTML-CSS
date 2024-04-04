@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <div class="container">
+        <h2></h2>
+    </div>
+</body>
+<script>
+    greet=()=>{
+       document.getElementsByClassName('container')[0].innerHTML="LOLO";
+    }
+    greet();
+    let sum= (a,b)=>a+b;
+    // Return return a=b
+    let half=a=>a/2;
+    // half of number
+    let obj1={
+        greeting:"Good Morning",
+        names:["jigar","jainil","Gautam"],
+     speak(){ 
+        this.names.forEach((ele)=>{
+            console.log(this.greeting +" "+ ele)
+            // this call the object greeting  if we use function instead of arrow function 
+            // then this call is not possible.
+        });
+    }
+    }
+    obj1.speak();
+    
+
+</script>
+</html>

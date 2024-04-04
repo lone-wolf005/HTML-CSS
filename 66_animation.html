@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        width: 300px;
+        height: 300px;
+        background-color: yellow;
+        position: relative;
+
+    }
+    #child{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        /* animation: child 3s; */
+
+    }
+/* @keyframes child{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    to{
+        top:0px;
+        left: 250px;
+    }
+} */
+    
+</style>
+<body>
+    <button onclick="papa()"> click me</button>
+    <hr>
+    <div class="parent">
+        <div id="child"></div>
+    </div>
+    
+</body>
+<script>
+    var ele=document.getElementById('child');
+    var pos1=0;
+    var pos2=0;
+    // var pos3=0;
+    // var pos4=0;
+    function papa(){
+         change1();
+         change2();
+        //  change3();
+        //  change4();
+
+    }
+    function change1(){
+      var anime1=setInterval(animate1,5);
+
+    }
+    function animate1(){
+        if(pos1==250){
+            clearInterval(anime1);
+        }
+        else{
+            pos1++;
+            // red.style.top=poe+"px";
+            ele.style.left=pos1+"px";
+        }
+    }
+
+    function change2(){
+      var anime2=setInterval(animate2,5);
+
+    }
+    function animate2(){
+        if(pos2==250){
+            clearInterval(anime2);
+        }
+        else{
+            pos2++;
+            ele.style.top=pos2+"px";
+            // ele.style.left=pos1+"px";
+        }
+    }
+    // function change3(){
+    //   var anime3=setInterval(animate3,5);
+
+    // }
+    // function animate3(){
+    //     if(pos1==0){
+    //         clearInterval(anime3);
+    //     }
+    //     else{
+    //         pos1--;
+    //         // red.style.top=poe+"px";
+    //         ele.style.left=pos1+"px";
+    //     }
+    // }
+    // function change4(){
+    //   var anime4=setInterval(animate4,5);
+
+    // }
+    // function animate4(){
+    //     if(pos2==0){
+    //         clearInterval(anime4);
+    //     }
+    //     else{
+    //         pos2--;
+    //         // red.style.top=poe+"px";
+    //         ele.style.left=pos2+"px";
+    //     }
+    // }
+</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .main{
+         height:400px;
+         width: 400px;
+         border: 2px solid black; 
+         display: grid;
+         /* grid-template-rows: auto ; */
+         grid-template-columns: auto  auto auto;
+         padding: 2px;
+         /* 
+         syntax
+           1. display:grid:;
+           2.grid-template-column; 
+         */
+         grid-row-gap: 5px;
+         grid-column-gap: 10px;
+         /* position: absolute; */
+         position: relative;
+
+         /* 
+          used to assign gap between the row and column
+         */
+
+
+    }
+     .main div{
+             font-size: 30px;
+             position: relative;
+             /* height: px; */
+             background: yellow;
+             border: black solid 1px;
+     }
+     #ab{
+      grid-column-start: 1 ;
+      grid-column-end: 3;
+      grid-row-start:1 ;
+      grid-row-end:3
+     }
+     /* 
+     start from where you want to start
+     end --> after where you want to streach
+      */
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div id="ab">1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>7</div>
+      <div>8</div>
+
+
+
+
+    </div>
+    
+</body>
+</html>

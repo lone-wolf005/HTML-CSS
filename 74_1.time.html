@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <div class="container">
+    
+    <button onclick="Show()">Show Time</button>
+    <button onclick="Hide()">Hide Time</button>
+    <h1 id="1"></h1>
+        
+    </div>
+</body>
+<script>
+    function Show(){
+        var x=new Date();
+        var hour=x.getHours();
+        var min=x.getMinutes();
+        var sec=x.getSeconds();
+        document.getElementById('1').innerHTML=hour+":"+min+":"+sec;
+        var y=setInterval(Show,1000);
+    }
+    
+    function Hide(){
+        document.getElementById('1').innerHTML="";
+        clearInterval(y);
+        
+    }
+
+</script>
+
+</html>
